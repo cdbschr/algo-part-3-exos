@@ -5,6 +5,16 @@
  */
 function average(scores) {
     // CODE HERE
+    let result = 0;
+    let average = 0;
+
+    while (result < scores.length) {
+        average += scores[result];
+        ++result;
+    }
+    average = average / scores.length;
+
+    return average;
 }
 
 export { average };

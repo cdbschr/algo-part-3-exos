@@ -7,6 +7,7 @@
 function wall(existingMessages, newMessage) {
     // CODE HERE
     existingMessages.push(newMessage);
+    
     return existingMessages;
 }
 

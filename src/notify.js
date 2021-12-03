@@ -12,7 +12,7 @@ function notify(messages) {
     let counter = messages.length;
     let color;
 
-    if (counter >= 5) {
+    if (counter > 5) {
         color = "red";
     } else {
         color = "green";
