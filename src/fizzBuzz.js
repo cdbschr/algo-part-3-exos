@@ -8,7 +8,21 @@
  * Voir le fichier de tests associé (spec/fizzBuzzSpec.js)
  */
 function fizzBuzz(min, max) {
-    // CODE HERE
+    let array = [];
+
+    while (min < max) {
+        if (min % 15 === 0) {
+            array.push("FizzBuzz");
+        } else if (min % 3 === 0) { 
+            array.push("Fizz");
+        } else if (min % 5 === 0) {
+            array.push("Buzz");
+        }
+        else array.push(min);
+
+        ++min;
+    }
+    return array;
 }
 
 export { fizzBuzz };
